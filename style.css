@@ -1,0 +1,509 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+}
+
+.haikal_navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 5%;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  background-color: aqua;
+}
+
+.haikal_logo {
+  color: #1e293b;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.haikal_logo-icon,
+.haikal_logo-text-highlight {
+  color: #2563eb;
+}
+
+.haikal_nav-links {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+.haikal_nav-links a {
+  text-decoration: none;
+  color: #1e293b;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: color 0.2s ease;
+}
+
+.haikal_nav-links a:hover {
+  color: #2563eb;
+}
+
+.haikal_hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 60px 8%;
+  min-height: 80vh;
+  background: linear-gradient(135deg, #eef5ff 0%, #e0edff 50%, #d8e8ff 100%);
+  gap: 40px;
+}
+
+.haikal_hero-content {
+  flex: 1;
+  max-width: 580px;
+}
+
+.haikal_hero-subtitle {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.haikal_hero-title {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #1e293b;
+  line-height: 1.1;
+  margin-bottom: 12px;
+}
+
+.haikal_hero-title-highlight {
+  color: #2563eb;
+}
+
+.haikal_hero-role {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.haikal_hero-description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 32px;
+}
+
+.haikal_btn-group {
+  display: flex;
+  gap: 16px;
+}
+
+.haikal_btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 12px;
+  transition: all 0.2s ease in-out;
+  cursor: pointer;
+}
+
+.haikal_btn-primary {
+  background-color: #2563eb;
+  color: white;
+  border: 2px solid #2563eb;
+}
+
+.haikal_btn-primary:hover {
+  background-color: #1e40af;
+  border-color: #1e40af;
+}
+
+.haikal_btn-outline {
+  background-color: transparent;
+  color: #2563eb;
+  border: 2px solid #2563eb;
+}
+
+.haikal_btn-outline:hover {
+  background-color: #2563eb;
+  color: white;
+}
+
+.haikal_hero-image {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.haikal_hero-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .haikal_hero {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .haikal_hero-content {
+    max-width: 100%;
+  }
+
+  .haikal_hero-image {
+    margin-top: 40px;
+  }
+}
+
+.haikal_about-section {
+  padding: 60px 8%;
+  background-color: #f8fafc;
+}
+
+.haikal_about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.haikal_about-content {
+  flex: 1;
+}
+
+.haikal_about-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #1e293b;
+  position: relative;
+  padding-bottom: 12px;
+  margin-bottom: 24px;
+}
+
+.haikal_about-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 45px;
+  height: 4px;
+  background-color: #2563eb;
+  border-radius: 2px;
+}
+
+.haikal_about-description {
+  font-size: 1.05rem;
+  line-height: 1.6;
+  color: #64748b;
+  margin-bottom: 24px;
+  max-width: 650px;
+}
+
+.haikal_about-info-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: center;
+}
+
+.haikal_about-info-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.95rem;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.haikal_about-info-item i {
+  color: #2563eb;
+  font-size: 1.2rem;
+}
+
+.haikal_about-image-wrapper {
+  width: 260px;
+  height: 280px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  overflow: hidden;
+  background-color: #e0f2fe;
+}
+
+.haikal_about-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
+@media (max-width: 768px) {
+  .haikal_about-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .haikal_about-image-wrapper {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+.haikal_skills-section {
+  padding: 40px 8%;
+  background-color: #ffffff;
+}
+
+.haikal_skills-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 24px;
+}
+
+.haikal_skills-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+}
+
+.haikal_skill-card {
+  background-color: #f8fafc;
+  padding: 14px 20px;
+  border-radius: 12px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.haikal_skill-card i {
+  font-size: 1.8rem;
+}
+
+.haikal_skill-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.haikal_skill-card:hover {
+  background-color: #e0f2fe;
+  cursor: pointer;
+}
+
+.haikal_skill-card:hover .haikal_skill-name {
+  color: #2563eb;
+}
+
+@media (max-width: 768px) {
+  .haikal_skills-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.haikal_projects-section {
+  padding: 50px 8%;
+  background-color: #f8fafc;
+}
+
+.haikal_projects-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.haikal_projects-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1e293b;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 32px;
+}
+
+.haikal_projects-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 45px;
+  height: 4px;
+  background-color: #2563eb;
+  border-radius: 2px;
+}
+
+.haikal_projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.haikal_projects-card {
+  background-color: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.haikal_projects-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.06);
+}
+
+.haikal_projects-image {
+  width: 100%;
+  height: 150px;
+  background-color: #93c5fd;
+  overflow: hidden;
+}
+
+.haikal_projects-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.haikal_projects-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.haikal_projects-card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin-bottom: 6px;
+}
+
+.haikal_projects-description {
+  font-size: 0.9rem;
+  color: #64748b;
+  line-height: 1.4;
+  margin-bottom: 16px;
+  flex-grow: 1;
+}
+
+.haikal_projects-link {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #2563eb;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: gap 0.2s ease;
+}
+
+.haikal_projects-link:hover {
+  gap: 10px;
+  color: #1e40af;
+}
+
+@media (max-width: 768px) {
+  .haikal_projects-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.haikal_footer {
+  background-color: #0f172a;
+  color: #ffffff;
+  padding: 32px 8% 20px;
+}
+
+.haikal_footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.haikal_footer-top {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding-bottom: 20px;
+}
+
+.haikal_footer-brand {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.haikal_footer-logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #2563eb;
+}
+
+.haikal_footer-logo-highlight {
+  color: #ffffff;
+}
+
+.haikal_footer-tagline {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.haikal_footer-divider-vertical {
+  width: 1px;
+  height: 36px;
+  background-color: #334155;
+}
+
+.haikal_footer-contact-list {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: #94a3b8;
+}
+
+.haikal_footer-contact-item {
+  color: #94a3b8;
+  font-size: 1rem;
+}
+
+.haikal_footer-divider-horizontal {
+  border: none;
+  height: 1px;
+  background-color: #334155;
+  margin-bottom: 16px;
+}
+
+.haikal_footer-bottom {
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+@media (max-width: 768px) {
+  .haikal_footer-top {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .haikal_footer-divider-vertical {
+    display: none;
+  }
+}
